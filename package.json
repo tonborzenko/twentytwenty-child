@@ -1,0 +1,17 @@
+{
+  "name": "twentytwenty-child",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "tonborzenko",
+  "license": "ISC",
+  "description": "This is TwentyTwenty child Theme for Wordpress and Woocommerce",
+  "scripts": {
+    "build:sass": "node-sass -r --output-style expanded assets/scss -o assets/css",
+    "start": "npm run build:sass && npm run build:sass -- -w"    
+  },
+  "devDependecies": {
+    "clean-css-cli": "^4.3.0",
+    "node-sass": "^4.13.0"
+  }
+}

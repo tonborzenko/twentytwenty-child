@@ -1,0 +1,42 @@
+@import "woocommerce";
+@import "gutenberg";
+
+.entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+  max-width: 76rem;
+}
+
+.header-inner, .section-inner {
+  max-width: 76rem !important;
+}
+
+.entry-content {
+  width: auto !important;
+}
+
+@media screen and (min-width: 767px) {
+  .wpmc-footer-right, .wpmc-footer-left {
+      width: auto;
+  }
+
+}
+
+.wpmc-nav-wrapper {
+  position: relative;
+}
+#wpmc-prev {
+  position: absolute;
+  left: 0;
+}
+
+.singular .entry-header {
+  padding: 0;
+}
+.singular .entry-header .entry-title {
+  padding: 1rem 0 3rem;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.menu-modal .toggle {
+  outline: none;
+}
