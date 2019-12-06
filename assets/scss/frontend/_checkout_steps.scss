@@ -1,0 +1,31 @@
+.wpmc-nav-wrapper {
+  position: relative;
+  #wpmc-prev {
+    position: absolute;
+    left: 0;
+  }
+}
+
+.wpmc-step-billing .woocommerce-billing-fields {
+  input.error {
+    background: #ffe7e7;
+    border-color: #e87676;
+  }
+}
+
+ul.wc_payment_methods {
+  &, li {
+    margin-left:0;
+  }
+}
+
+.ddtsugspoiler  {
+  display: none;
+}
+
+.woocommerce-checkout {
+  h2,h3 {
+    font-size: 20px !important;
+    margin-top: 10px !important;
+  }
+}

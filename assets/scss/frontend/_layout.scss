@@ -1,0 +1,47 @@
+.theme-twentytwenty {
+  #site-header {
+    border-bottom: 1px solid #dbdbdb;
+    .header-inner {
+      padding: 22px 0 25px;
+    }
+  }
+
+  .header-inner,
+  footer .section-inner,
+  .content-area,
+  #site-content .entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+    max-width: 760px;
+    padding-left: 0;
+    padding-right: 0;
+    width: calc(100% - 20px);
+    margin: 0 auto;
+
+    h2, h3 {
+      font-size: 36px;
+    }
+  }
+
+  &.woocommerce .content-area {
+    padding: 0;
+  }
+
+  #site-content .entry-header {
+    padding: 0;
+  }
+
+  .woocommerce-products-header__title.page-title,
+  .entry-title {
+    padding: 20px 0 30px 0;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  &.single-product .entry-title {
+    font-size: 30px;
+  }
+
+  .menu-modal .toggle {
+    outline: none;
+  }
+}

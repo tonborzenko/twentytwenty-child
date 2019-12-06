@@ -1,10 +1,11 @@
 <?php
 // Add child parent and child theme styles
-add_action( 'wp_enqueue_scripts', 'enqueue_styles' );
+add_action( 'wp_enqueue_scripts', 'enqueue_assets' );
 
-function enqueue_styles() {
+function enqueue_assets() {
    wp_enqueue_style( 'parent-styles', get_template_directory_uri().'/style.css' );
    wp_enqueue_style( 'child-styles', get_stylesheet_directory_uri().'/assets/css/frontend.css' );
+   wp_enqueue_script('child-scripts', get_stylesheet_directory_uri().'/assets/js/scripts.js' );
 }
 
 // Add css for gutenberg blocks inside backend
