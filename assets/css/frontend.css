@@ -94,14 +94,14 @@
   text-align: center;
 }
 
-.theme-twentytwenty ul.wc-block-grid__products li.wc-block-grid__product .add_to_cart_button,
-.theme-twentytwenty ul.products li.product .add_to_cart_button {
+.theme-twentytwenty ul.wc-block-grid__products li.wc-block-grid__product .button,
+.theme-twentytwenty ul.products li.product .button {
   padding: 10px 20px;
   margin: 0 auto;
 }
 
-.theme-twentytwenty ul.wc-block-grid__products li.wc-block-grid__product .add_to_cart_button.added:after,
-.theme-twentytwenty ul.products li.product .add_to_cart_button.added:after {
+.theme-twentytwenty ul.wc-block-grid__products li.wc-block-grid__product .button.added:after,
+.theme-twentytwenty ul.products li.product .button.added:after {
   content: none;
 }
 
