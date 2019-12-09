@@ -16,6 +16,8 @@
     width: calc(100% - 20px);
     margin-left: auto;
     margin-right: auto;
+    word-break: normal;
+    word-wrap: normal;
 
     h2, h3 {
       font-size: 36px;
@@ -44,5 +46,11 @@
 
   .menu-modal .toggle {
     outline: none;
+  }
+
+  .woocommerce section::after {
+    content: "";
+    display: table;
+    clear: both;
   }
 }

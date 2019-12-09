@@ -16,6 +16,8 @@
   width: calc(100% - 20px);
   margin-left: auto;
   margin-right: auto;
+  word-break: normal;
+  word-wrap: normal;
 }
 
 .theme-twentytwenty .header-inner h2, .theme-twentytwenty .header-inner h3,
@@ -50,6 +52,12 @@
 
 .theme-twentytwenty .menu-modal .toggle {
   outline: none;
+}
+
+.theme-twentytwenty .woocommerce section::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .theme-twentytwenty .content-area .site-main {
@@ -124,6 +132,10 @@
 
 .theme-twentytwenty .added_to_cart {
   display: block;
+}
+
+.theme-twentytwenty .woocommerce-product-gallery .flex-control-thumbs li {
+  margin: 0 5% 0 0 !important;
 }
 
 .theme-twentytwenty .wc-block-grid__product-onsale,
