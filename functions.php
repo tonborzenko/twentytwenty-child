@@ -31,4 +31,21 @@ function misha_custom_button_text( $button_text ) {
    return $options['t_next'];
 }
 
+
+add_filter( 'load_textdomain_mofile', 'load_custom_plugin_translation_file', 10, 2 );
+/*
+ * Replace 'textdomain' with your plugin's textdomain. e.g. 'woocommerce'. 
+ * File to be named, for example, yourtranslationfile-en_GB.mo
+ * File to be placed, for example, wp-content/lanaguages/textdomain/yourtranslationfile-en_GB.mo
+ */
+function load_custom_plugin_translation_file( $mofile, $domain ) {
+   if ( 'woocommerce' === $domain) {
+      $locale = get_locale();
+      if ( $locale = 'ru_RU' ) {
+         $mofile = get_stylesheet_directory() . '/languages/woocommerce-' . $locale . '.mo';
+      }
+   }
+   return $mofile;
+}
+
 ?>
