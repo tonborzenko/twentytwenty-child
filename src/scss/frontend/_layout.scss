@@ -1,4 +1,9 @@
 .theme-twentytwenty {
+  * {
+    word-break: normal;
+    word-wrap: normal;    
+  }
+
   #site-header {
     border-bottom: 1px solid #dbdbdb;
     .header-inner {
@@ -16,8 +21,6 @@
     width: calc(100% - 20px);
     margin-left: auto;
     margin-right: auto;
-    word-break: normal;
-    word-wrap: normal;
 
     h2, h3 {
       font-size: 36px;

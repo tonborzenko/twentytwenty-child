@@ -1,3 +1,8 @@
+.theme-twentytwenty * {
+  word-break: normal;
+  word-wrap: normal;
+}
+
 .theme-twentytwenty #site-header {
   border-bottom: 1px solid #dbdbdb;
 }
@@ -16,8 +21,6 @@
   width: calc(100% - 20px);
   margin-left: auto;
   margin-right: auto;
-  word-break: normal;
-  word-wrap: normal;
 }
 
 .theme-twentytwenty .header-inner h2, .theme-twentytwenty .header-inner h3,
