@@ -13,6 +13,16 @@
   }
 }
 
+.woocommerce #order_review_heading {
+  margin-bottom: 0;
+}
+
+.woocommerce-form-coupon-toggle {
+  .woocommerce-info {
+    margin-bottom: 10px;
+  }
+}
+
 ul.wc_payment_methods {
   &, li {
     margin-left:0;
@@ -27,5 +37,14 @@ ul.wc_payment_methods {
   h2,h3 {
     font-size: 20px !important;
     margin-top: 10px !important;
+  }
+}
+
+.form-row.place-order {
+  position: relative;
+  .button[name=woocommerce_checkout_place_order] {
+    position: absolute;
+    right: 0;
+    margin-top: 10px;
   }
 }

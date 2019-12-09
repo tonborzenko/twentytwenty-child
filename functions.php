@@ -24,4 +24,11 @@ remove_action( 'woocommerce_before_shop_loop' , 'woocommerce_catalog_ordering', 
 // Remove the result count from WooCommerce
 remove_action( 'woocommerce_before_shop_loop' , 'woocommerce_result_count', 20 );
 
+
+add_filter( 'woocommerce_order_button_text', 'misha_custom_button_text' );
+function misha_custom_button_text( $button_text ) {
+   $options = get_option( 'wmsc_options' );
+   return $options['t_next'];
+}
+
 ?>

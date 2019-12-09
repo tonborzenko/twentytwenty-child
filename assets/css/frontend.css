@@ -14,7 +14,8 @@
   padding-left: 0;
   padding-right: 0;
   width: calc(100% - 20px);
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .theme-twentytwenty .header-inner h2, .theme-twentytwenty .header-inner h3,
@@ -182,6 +183,14 @@
   border-color: #e87676;
 }
 
+.woocommerce #order_review_heading {
+  margin-bottom: 0;
+}
+
+.woocommerce-form-coupon-toggle .woocommerce-info {
+  margin-bottom: 10px;
+}
+
 ul.wc_payment_methods, ul.wc_payment_methods li {
   margin-left: 0;
 }
@@ -193,4 +202,14 @@ ul.wc_payment_methods, ul.wc_payment_methods li {
 .woocommerce-checkout h2, .woocommerce-checkout h3 {
   font-size: 20px !important;
   margin-top: 10px !important;
+}
+
+.form-row.place-order {
+  position: relative;
+}
+
+.form-row.place-order .button[name=woocommerce_checkout_place_order] {
+  position: absolute;
+  right: 0;
+  margin-top: 10px;
 }
