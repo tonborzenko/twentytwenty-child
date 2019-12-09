@@ -51,7 +51,7 @@
     outline: none;
   }
 
-  .woocommerce section::after {
+  section::after {
     content: "";
     display: table;
     clear: both;

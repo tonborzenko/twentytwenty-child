@@ -57,7 +57,7 @@
   outline: none;
 }
 
-.theme-twentytwenty .woocommerce section::after {
+.theme-twentytwenty section::after {
   content: "";
   display: table;
   clear: both;
@@ -182,6 +182,11 @@
   padding: 0 0 5px 0;
   font-size: 14px;
   display: block;
+}
+
+.theme-twentytwenty .woocommerce-product-gallery__trigger {
+  text-decoration: none;
+  font-size: 30px;
 }
 
 .wpmc-nav-wrapper {
