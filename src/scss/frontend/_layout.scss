@@ -56,4 +56,16 @@
     display: table;
     clear: both;
   }
+
+  .primary-menu  {
+    li a {
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+    }
+    
+    li.current-menu-item > a, li a:hover {
+      text-decoration: none;
+      border-bottom: 1px solid #e22658;
+    }
+  }
 }

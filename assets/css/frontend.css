@@ -63,6 +63,16 @@
   clear: both;
 }
 
+.theme-twentytwenty .primary-menu li a {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.theme-twentytwenty .primary-menu li.current-menu-item > a, .theme-twentytwenty .primary-menu li a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid #e22658;
+}
+
 .theme-twentytwenty .content-area .site-main {
   margin: 0;
 }
