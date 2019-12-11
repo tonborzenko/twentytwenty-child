@@ -153,11 +153,13 @@
 .theme-twentytwenty ul.wc-block-grid__products li.wc-block-grid__product .added_to_cart,
 .theme-twentytwenty ul.products li.product .added_to_cart {
   position: absolute;
-  bottom: -32px;
+  bottom: -34px;
   left: 0;
   right: 0;
   margin: 0;
   white-space: nowrap;
+  font-size: 16px;
+  padding: 4px 0;
 }
 
 .theme-twentytwenty .woocommerce-info, .theme-twentytwenty .woocommerce-message, .theme-twentytwenty .woocommerce-error {
@@ -250,6 +252,18 @@
 
 .theme-twentytwenty .woocommerce-additional-fields {
   margin-top: 20px;
+}
+
+.theme-twentytwenty .woocommerce-checkout input[type="text"], .theme-twentytwenty .woocommerce-checkout input[type="password"], .theme-twentytwenty .woocommerce-checkout input[type="email"], .theme-twentytwenty .woocommerce-checkout input[type="url"], .theme-twentytwenty .woocommerce-checkout input[type="date"], .theme-twentytwenty .woocommerce-checkout input[type="month"], .theme-twentytwenty .woocommerce-checkout input[type="time"], .theme-twentytwenty .woocommerce-checkout input[type="datetime"], .theme-twentytwenty .woocommerce-checkout input[type="datetime-local"], .theme-twentytwenty .woocommerce-checkout input[type="week"], .theme-twentytwenty .woocommerce-checkout input[type="number"], .theme-twentytwenty .woocommerce-checkout input[type="search"], .theme-twentytwenty .woocommerce-checkout input[type="tel"], .theme-twentytwenty .woocommerce-checkout input[type="color"] {
+  padding: 1rem 1rem;
+}
+
+.theme-twentytwenty .woocommerce-checkout textarea {
+  padding: 0.6rem 1rem;
+}
+
+.theme-twentytwenty .woocommerce-checkout .dadata-address {
+  height: 40px;
 }
 
 .single-product .summary, .woocommerce-product-gallery {

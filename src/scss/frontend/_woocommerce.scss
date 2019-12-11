@@ -65,11 +65,13 @@
 
     .added_to_cart {
       position: absolute;
-      bottom: -32px;
+      bottom: -34px;
       left:0;
       right: 0;
       margin: 0;
       white-space: nowrap;
+      font-size: 16px;
+      padding: 4px 0;
     }
   }
 
@@ -170,6 +172,18 @@
   }
   .woocommerce-additional-fields {
     margin-top: 20px;
+  }
+
+  .woocommerce-checkout {
+    input[type="text"], input[type="password"], input[type="email"], input[type="url"], input[type="date"], input[type="month"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="week"], input[type="number"], input[type="search"], input[type="tel"], input[type="color"] {
+      padding: 1rem 1rem;
+    }    
+    textarea {
+      padding: 0.6rem 1rem;
+    }
+    .dadata-address {
+      height: 40px;
+    }
   }
 
 }

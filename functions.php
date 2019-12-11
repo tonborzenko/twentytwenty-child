@@ -48,4 +48,11 @@ function load_custom_plugin_translation_file( $mofile, $domain ) {
    return $mofile;
 }
 
+add_filter( 'woocommerce_checkout_fields' , 'bbloomer_change_address_input_type', 10, 1 );
+ 
+function bbloomer_change_address_input_type( $fields ) {
+   $fields['billing']['billing_address_1']['type'] = 'textarea';
+   return $fields;
+}
+
 ?>
