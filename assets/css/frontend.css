@@ -86,6 +86,13 @@
   margin: 0 -5px;
 }
 
+.theme-twentytwenty ul.wc-block-grid__products::before, .theme-twentytwenty ul.wc-block-grid__products::after,
+.theme-twentytwenty ul.products::before,
+.theme-twentytwenty ul.products::after {
+  content: none !important;
+  display: none !important;
+}
+
 .theme-twentytwenty .has-2-columns ul.wc-block-grid__products li.wc-block-grid__product,
 .theme-twentytwenty ul.products.columns-2 li.product {
   width: 50%;
@@ -150,6 +157,7 @@
   left: 0;
   right: 0;
   margin: 0;
+  white-space: nowrap;
 }
 
 .theme-twentytwenty .woocommerce-info, .theme-twentytwenty .woocommerce-message, .theme-twentytwenty .woocommerce-error {
