@@ -157,6 +157,13 @@
     font-size: 30px;
   }
 
+  .ship-to-different-address {
+    display: none;
+  }
+  .woocommerce-additional-fields {
+    margin-top: 20px;
+  }
+
 }
 
 .single-product .summary, .woocommerce-product-gallery {
@@ -172,6 +179,7 @@
   .order_details {
     display: table;
     margin: 0 auto 30px auto;
+    text-align: left;
   }
 
   .woocommerce {
