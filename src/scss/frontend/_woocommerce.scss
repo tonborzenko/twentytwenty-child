@@ -157,7 +157,7 @@
     font-size: 30px;
   }
 
-  .ship-to-different-address {
+  #ship-to-different-address {
     display: none;
   }
   .woocommerce-additional-fields {
@@ -187,8 +187,9 @@
   }
 }
 
-.related.products {
+.related.products, .cart_totals  {
   h2 {
+    font-size: 24px !important;
     margin: 10px 0 20px;
   }
 }

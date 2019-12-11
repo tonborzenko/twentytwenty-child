@@ -231,7 +231,7 @@
   font-size: 30px;
 }
 
-.theme-twentytwenty .ship-to-different-address {
+.theme-twentytwenty #ship-to-different-address {
   display: none;
 }
 
@@ -255,6 +255,11 @@
 
 .woocommerce-order-pay .woocommerce {
   text-align: center;
+}
+
+.related.products h2, .cart_totals h2 {
+  font-size: 24px !important;
+  margin: 10px 0 20px;
 }
 
 .wpmc-nav-wrapper {
