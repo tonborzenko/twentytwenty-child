@@ -55,4 +55,27 @@ function bbloomer_change_address_input_type( $fields ) {
    return $fields;
 }
 
+// function remove_shipping_calc_on_cart( $show_shipping ) {
+//    if( is_cart() ) {
+//        return false;
+//    }
+//    return $show_shipping;
+// }
+// add_filter( 'woocommerce_cart_ready_to_calc_shipping', 'remove_shipping_calc_on_cart', 99 );
+
+add_filter( 'woocommerce_product_needs_shipping', 'filter_woocommerce_product_needs_shipping', 99 );
+
+function filter_woocommerce_product_needs_shipping( $condition ){
+   if( !is_checkout() ) {
+       return false;
+   }
+	return $condition;
+}
+
+add_action( 'woocommerce_proceed_to_checkout', 'woocommerce_before_cart_totals_html' );
+
+function woocommerce_before_cart_totals_html() {
+   echo '<div style="padding: 0 0 10px 10px; font-size: 16px;">' . __( 'Enter your address to view shipping options.', 'woocommerce' ) . '</div>';
+}
+
 ?>

@@ -215,3 +215,20 @@
     margin: 10px 0 20px;
   }
 }
+
+.cart-collaterals {
+  .shop_table  {
+    margin: 5px 0;
+  }
+}
+
+//@media only screen and (max-width: 768px) {
+  #site-content #shipping_method {
+    padding-bottom: 0;
+    li {
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+      justify-content: flex-start;
+    }    
+  }
+//}

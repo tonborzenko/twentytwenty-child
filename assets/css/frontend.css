@@ -289,6 +289,20 @@
   margin: 10px 0 20px;
 }
 
+.cart-collaterals .shop_table {
+  margin: 5px 0;
+}
+
+#site-content #shipping_method {
+  padding-bottom: 0;
+}
+
+#site-content #shipping_method li {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+
 .wpmc-nav-wrapper {
   position: relative;
 }
