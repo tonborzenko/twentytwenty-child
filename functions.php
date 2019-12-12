@@ -48,13 +48,6 @@ function load_custom_plugin_translation_file( $mofile, $domain ) {
    return $mofile;
 }
 
-add_filter( 'woocommerce_checkout_fields' , 'bbloomer_change_address_input_type', 10, 1 );
- 
-function bbloomer_change_address_input_type( $fields ) {
-   $fields['billing']['billing_address_1']['type'] = 'textarea';
-   return $fields;
-}
-
 // function remove_shipping_calc_on_cart( $show_shipping ) {
 //    if( is_cart() ) {
 //        return false;
@@ -63,6 +56,7 @@ function bbloomer_change_address_input_type( $fields ) {
 // }
 // add_filter( 'woocommerce_cart_ready_to_calc_shipping', 'remove_shipping_calc_on_cart', 99 );
 
+// Это нужно что бы отключить подсчет доставки везде кроме checkout, что бы доставка почты России не пересчитывалась каждый раз после добавления товаров в корзину
 add_filter( 'woocommerce_product_needs_shipping', 'filter_woocommerce_product_needs_shipping', 99 );
 
 function filter_woocommerce_product_needs_shipping( $condition ){
