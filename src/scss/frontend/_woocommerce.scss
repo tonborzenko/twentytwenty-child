@@ -19,6 +19,7 @@
     flex: 1 0 50%;
     max-width: 50%;
     float: none !important;
+    padding: 0;
   }
 
   .has-3-columns ul.wc-block-grid__products li.wc-block-grid__product,
@@ -27,6 +28,7 @@
     flex: 1 0 33.33%;
     max-width: 33.33%;
     float: none !important;
+    padding: 0;
 
     @media only screen and (max-width: 768px) {
       width: 50%;
@@ -190,7 +192,11 @@
   margin-bottom: 20px !important;
 }
 
-
+@media (min-width: 768px) {
+  .woocommerce table.cart td.product-quantity .qib-container:not(#qib_id) {
+    justify-content: flex-end;
+  }
+}
 .woocommerce-order-pay {
   .button.cancel {
     display: none;
