@@ -72,4 +72,10 @@ function woocommerce_before_cart_totals_html() {
    echo '<div style="padding: 0 0 10px 10px; font-size: 16px;">' . __( 'Enter your address to view shipping options.', 'woocommerce' ) . '</div>';
 }
 
+add_action('wdp_price_display_init_hooks', 'disable_price_strike', 99);
+
+function disable_price_strike($instanse) {
+   remove_filter( 'woocommerce_get_price_html', array( $instanse, 'hook_get_price_html' ), 10 );
+}
+
 ?>

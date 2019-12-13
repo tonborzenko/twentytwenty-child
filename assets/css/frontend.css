@@ -225,6 +225,18 @@
   margin-bottom: 12px !important;
 }
 
+.theme-twentytwenty .price del {
+  display: block;
+  margin-top: -10px;
+  opacity: 1;
+  color: #888;
+}
+
+.theme-twentytwenty .price del span {
+  color: #888;
+  font-size: 95% !important;
+}
+
 .theme-twentytwenty .price span {
   font-size: 20px !important;
 }
@@ -266,6 +278,16 @@
 
 .theme-twentytwenty .woocommerce-checkout .dadata-address {
   height: 40px;
+}
+
+.theme-twentytwenty .woocommerce .product-subtotal del, .theme-twentytwenty .woocommerce .product-total del, .theme-twentytwenty .woocommerce .cart-subtotal del, .theme-twentytwenty .woocommerce .cart-total del, .theme-twentytwenty .woocommerce .product-price del {
+  display: block;
+}
+
+.theme-twentytwenty .woocommerce .product-subtotal del, .theme-twentytwenty .woocommerce .product-subtotal del span, .theme-twentytwenty .woocommerce .product-total del, .theme-twentytwenty .woocommerce .product-total del span, .theme-twentytwenty .woocommerce .cart-subtotal del, .theme-twentytwenty .woocommerce .cart-subtotal del span, .theme-twentytwenty .woocommerce .cart-total del, .theme-twentytwenty .woocommerce .cart-total del span, .theme-twentytwenty .woocommerce .product-price del, .theme-twentytwenty .woocommerce .product-price del span {
+  opacity: 1;
+  font-weight: 400 !important;
+  color: #888;
 }
 
 .single-product .summary, .woocommerce-product-gallery {

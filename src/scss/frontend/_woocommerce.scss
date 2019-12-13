@@ -141,6 +141,16 @@
 
   .price {
     margin-bottom: 12px !important;
+    del {
+      display: block;
+      margin-top: -10px;
+      opacity: 1;
+      color: #888;
+      span {
+        color: #888;
+        font-size: 95% !important;
+      }
+    }
     span {
       font-size: 20px !important;
     }
@@ -183,6 +193,20 @@
     }
     .dadata-address {
       height: 40px;
+    }
+  }
+
+
+  .woocommerce {
+    .product-subtotal, .product-total, .cart-subtotal, .cart-total, .product-price {
+      del {
+        display: block;
+        &, span {
+          opacity: 1;
+          font-weight: 400 !important;
+          color: #888;
+        }
+      }
     }
   }
 
