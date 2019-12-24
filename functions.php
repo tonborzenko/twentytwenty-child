@@ -1,4 +1,6 @@
 <?php
+require get_theme_file_path( 'classes/customize_register.php' );
+
 // Add child parent and child theme styles
 add_action( 'wp_enqueue_scripts', 'enqueue_assets' );
 
@@ -77,5 +79,6 @@ add_action('wdp_price_display_init_hooks', 'disable_price_strike', 99);
 function disable_price_strike($instanse) {
    remove_filter( 'woocommerce_get_price_html', array( $instanse, 'hook_get_price_html' ), 10 );
 }
+
 
 ?>

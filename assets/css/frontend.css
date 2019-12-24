@@ -9,6 +9,7 @@
 
 .theme-twentytwenty #site-header .header-inner {
   padding: 22px 0 25px;
+  display: flex;
 }
 
 .theme-twentytwenty .header-inner,
@@ -75,6 +76,19 @@
 
 .theme-twentytwenty .menu-modal {
   z-index: 299;
+}
+
+.theme-twentytwenty .header-titles-wrapper {
+  justify-content: flex-start;
+  padding-left: 0;
+  text-align: left;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .theme-twentytwenty .header-inner .toggle {
+    padding: 0 1.3rem;
+  }
 }
 
 .theme-twentytwenty .content-area .site-main {
