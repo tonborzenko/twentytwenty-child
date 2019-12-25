@@ -49,11 +49,23 @@
 						<?php
 							// Site title or logo.
 							twentytwenty_site_logo();
-
+							
 							// Site description.
-							twentytwenty_site_description();
-						?>
+							//twentytwenty_site_description();
 
+						if (!is_front_page()) {
+						?>
+							<a class="return-to-shop" href="<?php echo esc_url( get_home_url() ); ?>">
+								<span class="arrow">&#x2190;</span>
+								<span class="text">
+								<?php
+									_e( 'Return to shop', 'woocommerce' );
+								?>
+								</span>
+							</a>
+						<?php
+							}
+						?>
 					</div><!-- .header-titles -->
 
 				</div><!-- .header-titles-wrapper -->

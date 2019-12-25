@@ -91,6 +91,61 @@
   }
 }
 
+.theme-twentytwenty .header-titles {
+  flex-direction: column;
+  margin: 0 !important;
+  position: relative;
+  height: 4.4rem;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.theme-twentytwenty .header-titles .site-title {
+  margin: 0 !important;
+}
+
+.theme-twentytwenty .header-titles .return-to-shop {
+  text-decoration: none;
+  position: absolute;
+  left: 0;
+  white-space: nowrap;
+  top: calc(100% - 0.5rem);
+  width: auto;
+  color: #6d6d6d;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+@media (min-width: 700px) {
+  .theme-twentytwenty .header-titles .return-to-shop {
+    font-size: 1.2rem;
+  }
+}
+
+.theme-twentytwenty .header-titles .return-to-shop:hover {
+  text-decoration: underline;
+}
+
+.theme-twentytwenty .header-titles .return-to-shop .text {
+  padding-left: 16px;
+}
+
+.theme-twentytwenty .header-titles .return-to-shop .arrow {
+  position: absolute;
+  font-size: 18px;
+  width: 12px;
+  overflow: hidden;
+  line-height: 20px;
+  margin-top: -6px;
+}
+
+@media (min-width: 700px) {
+  .theme-twentytwenty .header-titles .return-to-shop .arrow {
+    margin-top: -5px;
+  }
+}
+
 .theme-twentytwenty .content-area .site-main {
   margin: 0;
 }

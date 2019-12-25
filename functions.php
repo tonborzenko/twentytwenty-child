@@ -80,5 +80,9 @@ function disable_price_strike($instanse) {
    remove_filter( 'woocommerce_get_price_html', array( $instanse, 'hook_get_price_html' ), 10 );
 }
 
+add_filter( 'woocommerce_show_page_title', 'remove_shop_page_title' );
+function remove_shop_page_title() {
+   return boolval(!is_front_page());
+}
 
 ?>

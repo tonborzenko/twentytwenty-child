@@ -87,4 +87,52 @@
       padding: 0 1.3rem;
     }    
   }
+
+  .header-titles {
+    flex-direction: column;
+    margin: 0 !important;
+    position: relative;
+    height: 4.4rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+    .site-title {
+      margin: 0 !important;
+
+    }
+    .return-to-shop {
+      text-decoration: none;
+      position: absolute;
+      left: 0;
+      white-space: nowrap;
+      top: calc(100% - 0.5rem);
+      width: auto;
+      color: #6d6d6d;     
+      font-size: 1rem;
+      font-weight: 600;
+      @media (min-width: 700px) {
+        font-size: 1.2rem;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      .text {
+        padding-left: 16px;
+      }
+      .arrow {
+        position: absolute;
+        font-size: 18px;
+        width: 12px;
+        overflow: hidden;
+        line-height: 20px;
+        margin-top: -6px;
+        @media (min-width: 700px) {
+          margin-top: -5px;
+        }        
+      }
+    }
+  }
 }
