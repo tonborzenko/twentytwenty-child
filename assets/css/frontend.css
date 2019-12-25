@@ -105,7 +105,7 @@
   margin: 0 !important;
 }
 
-.theme-twentytwenty .header-titles .return-to-shop {
+.theme-twentytwenty .header-titles .header-titles-return {
   text-decoration: none;
   position: absolute;
   left: 0;
@@ -118,32 +118,26 @@
 }
 
 @media (min-width: 700px) {
-  .theme-twentytwenty .header-titles .return-to-shop {
+  .theme-twentytwenty .header-titles .header-titles-return {
     font-size: 1.2rem;
   }
 }
 
-.theme-twentytwenty .header-titles .return-to-shop:hover {
+.theme-twentytwenty .header-titles .header-titles-return:hover {
   text-decoration: underline;
 }
 
-.theme-twentytwenty .header-titles .return-to-shop .text {
+.theme-twentytwenty .header-titles .header-titles-return .text {
   padding-left: 16px;
 }
 
-.theme-twentytwenty .header-titles .return-to-shop .arrow {
+.theme-twentytwenty .header-titles .header-titles-return .arrow {
   position: absolute;
-  font-size: 18px;
   width: 12px;
   overflow: hidden;
-  line-height: 20px;
-  margin-top: -6px;
-}
-
-@media (min-width: 700px) {
-  .theme-twentytwenty .header-titles .return-to-shop .arrow {
-    margin-top: -5px;
-  }
+  margin-top: -1px;
+  font-size: 150%;
+  line-height: 75%;
 }
 
 .theme-twentytwenty .content-area .site-main {

@@ -101,7 +101,7 @@
       margin: 0 !important;
 
     }
-    .return-to-shop {
+    .header-titles-return {
       text-decoration: none;
       position: absolute;
       left: 0;
@@ -124,14 +124,11 @@
       }
       .arrow {
         position: absolute;
-        font-size: 18px;
         width: 12px;
         overflow: hidden;
-        line-height: 20px;
-        margin-top: -6px;
-        @media (min-width: 700px) {
-          margin-top: -5px;
-        }        
+        margin-top: -1px;
+        font-size: 150%;
+        line-height: 75%;
       }
     }
   }
